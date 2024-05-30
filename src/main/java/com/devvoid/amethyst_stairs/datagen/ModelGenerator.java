@@ -3,7 +3,6 @@ package com.devvoid.amethyst_stairs.datagen;
 import com.devvoid.amethyst_stairs.AmethystStairsMod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.AmethystBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;

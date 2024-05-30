@@ -3,14 +3,10 @@ package com.devvoid.amethyst_stairs.datagen;
 import com.devvoid.amethyst_stairs.AmethystStairsMod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.fabricmc.fabric.api.mininglevel.v1.FabricMineableTags;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.RecipeProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
-
-import java.util.function.Consumer;
 
 public class RecipeGenerator extends FabricRecipeProvider {
     public RecipeGenerator(FabricDataOutput output) {
@@ -18,7 +14,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
         var reg = AmethystStairsMod.BLOCKS;
 
         var cat = RecipeCategory.BUILDING_BLOCKS;
